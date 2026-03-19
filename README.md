@@ -1,39 +1,8 @@
 # 🔍 CodeLens — AI Code Review Assistant
 
-> A production-ready AI-powered code review tool built with React, TypeScript, Node.js, and OpenAI GPT-4o mini. Paste code or import from GitHub and receive structured feedback on bugs, performance, readability, complexity, and refactoring opportunities.
+> An AI-powered code review tool built with React, TypeScript, Node.js, and OpenAI GPT-4o mini. Paste code or import from GitHub and receive structured feedback on bugs, performance, readability, complexity, and refactoring opportunities.
 
 ---
-
-## 📸 Screenshots
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  CodeLens [AI]   Code Review — Powered by OpenAI GPT-4o mini   │
-├──────────────────────────────────────────────────────────────────┤
-│  ┌─────────────────────────────────────────┐                     │
-│  │  Code Editor          [TS▾] [GitHub] [🗑]│                     │
-│  │  ─────────────────────────────────────  │                     │
-│  │  function bubbleSort(arr: number[]) {   │                     │
-│  │    for (let i = 0; i < n - 1; i++) {   │                     │
-│  │      for (let j = 0; j < ...) {        │                     │
-│  │  ...                                   │                     │
-│  │  ─────────────────────────────────────  │                     │
-│  │  42 lines                [▶ Review Code]│                     │
-│  └─────────────────────────────────────────┘                     │
-│                                                                  │
-│  ┌──────────── Score ──────────────────────────────────────┐    │
-│  │  7/10 Good  · 8 total issues  · 2 bugs · 3 perf         │    │
-│  ├─────────────────────────────────────────────────────────┤    │
-│  │ [Bugs 2][Performance 3][Readability 1][Suggestions 2]   │    │
-│  │ [Refactor]                                              │    │
-│  │  • Potential null dereference on line 12                │    │
-│  │  • Missing bounds check before array access             │    │
-│  └─────────────────────────────────────────────────────────┘    │
-└──────────────────────────────────────────────────────────────────┘
-```
-
----
-
 ## 🏗️ Architecture
 
 ```
@@ -82,7 +51,6 @@ ai-code-review/
 │   │   └── server.ts                # Entry point
 │   └── tsconfig.json
 │
-├── docker-compose.yml
 ├── .env.example
 └── README.md
 ```
@@ -142,21 +110,6 @@ cd frontend && npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173)
-
----
-
-## 🐳 Docker
-
-```bash
-# Build and run with Docker Compose
-cp .env.example .env
-# Edit .env with your OPENAI_API_KEY
-
-docker-compose up --build
-```
-
-- Frontend → [http://localhost:5173](http://localhost:5173)
-- Backend → [http://localhost:3001](http://localhost:3001)
 
 ---
 
