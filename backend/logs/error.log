@@ -1,0 +1,56 @@
+2026-03-16T08:32:55.714Z [[31merror[39m]: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [403 Forbidden] Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+    at handleResponseNotOk (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\@google\generative-ai\dist\index.js:434:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at makeRequest (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\@google\generative-ai\dist\index.js:403:9)
+    at generateContent (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\@google\generative-ai\dist\index.js:867:22)
+    at reviewCodeWithAI (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\services\openaiService.ts:62:18)
+    at async Promise.all (index 0)
+    at reviewCode (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\controllers\reviewController.ts:26:42)
+2026-03-16T08:34:24.905Z [[31merror[39m]: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [403 Forbidden] Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+    at handleResponseNotOk (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\@google\generative-ai\dist\index.js:434:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at makeRequest (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\@google\generative-ai\dist\index.js:403:9)
+    at generateContent (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\@google\generative-ai\dist\index.js:867:22)
+    at reviewCodeWithAI (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\services\openaiService.ts:62:18)
+    at async Promise.all (index 0)
+    at reviewCode (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\controllers\reviewController.ts:26:42)
+2026-03-16T09:00:25.968Z [[31merror[39m]: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [403 Forbidden] Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+    at handleResponseNotOk (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\@google\generative-ai\dist\index.js:434:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at makeRequest (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\@google\generative-ai\dist\index.js:403:9)
+    at generateContent (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\@google\generative-ai\dist\index.js:867:22)
+    at reviewCodeWithAI (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\services\openaiService.ts:62:18)
+    at async Promise.all (index 0)
+    at reviewCode (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\controllers\reviewController.ts:26:42)
+2026-03-16T09:14:17.810Z [[31merror[39m]: TypeError: Cannot read properties of undefined (reading 'generateContent')
+    at reviewCodeWithAI (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\services\openaiService.ts:62:36)
+    at reviewCode (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\controllers\reviewController.ts:27:23)
+    at Layer.handle [as handle_request] (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\express\lib\router\route.js:149:13)
+    at middleware (C:\CodeReviewProject\ai-code-review\ai-code-review\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-03-16T09:15:25.565Z [[31merror[39m]: Groq API error: 401 Invalid API Key
+2026-03-16T09:15:25.569Z [[31merror[39m]: Error: Groq API error: 401 Invalid API Key
+    at reviewCodeWithAI (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\services\openaiService.ts:81:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.all (index 0)
+    at reviewCode (C:\CodeReviewProject\ai-code-review\ai-code-review\backend\src\controllers\reviewController.ts:26:42)
+2026-03-19T07:58:11.238Z [[31merror[39m]: Groq API error: 401 Invalid API Key
+2026-03-19T07:58:11.252Z [[31merror[39m]: Error: Groq API error: 401 Invalid API Key
+    at reviewCodeWithAI (C:\CodeReviewProject\ai-code-review\backend\src\services\openaiService.ts:81:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at reviewCode (C:\CodeReviewProject\ai-code-review\backend\src\controllers\reviewController.ts:26:42)
+2026-03-19T08:00:40.575Z [[31merror[39m]: Groq API error: 401 Invalid API Key
+2026-03-19T08:00:40.577Z [[31merror[39m]: Error: Groq API error: 401 Invalid API Key
+    at reviewCodeWithAI (C:\CodeReviewProject\ai-code-review\backend\src\services\openaiService.ts:81:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at reviewCode (C:\CodeReviewProject\ai-code-review\backend\src\controllers\reviewController.ts:26:42)
+2026-03-19T08:03:37.966Z [[31merror[39m]: Error: Code must be between 1 and 10000 characters
+    at createError (C:\CodeReviewProject\ai-code-review\backend\src\middleware\errorHandler.ts:39:27)
+    at reviewCode (C:\CodeReviewProject\ai-code-review\backend\src\controllers\reviewController.ts:15:30)
+    at Layer.handle [as handle_request] (C:\CodeReviewProject\ai-code-review\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\CodeReviewProject\ai-code-review\node_modules\express\lib\router\route.js:149:13)
+    at middleware (C:\CodeReviewProject\ai-code-review\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
